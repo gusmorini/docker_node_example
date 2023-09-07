@@ -1,0 +1,30 @@
+@hostname = http://localhost:3000
+
+
+GET {{hostname}}/videos
+
+###
+
+POST {{hostname}}/videos
+Content-Type: application/json
+
+{
+  "title": "titulo teste",
+  "description": "descrição de teste",
+  "duration": 60
+}
+
+###
+
+PUT {{hostname}}/videos/fbca27db-b834-4204-b9e2-0a22388bfb71
+Content-Type: application/json
+
+{
+  "title": "titulo teste update",
+  "description": "descrição de teste update",
+  "duration": 120
+}
+
+###
+
+DELETE {{hostname}}/videos/c14e38ed-c8f5-4989-9424-dc3ba73a1406
