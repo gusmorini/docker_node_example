@@ -2,6 +2,7 @@
 
 
 GET {{hostname}}/videos
+?search=
 
 ###
 
