@@ -4,9 +4,9 @@ services:
   node:
     image: node:alpine
     ports:
-      - '3000:3000'
+      - 3000:3000
     volumes:
-      - ./:/srv/app
-    working_dir: /srv/app
+      - .:/home/node/app
+    working_dir: /home/node/app
     user: node
-    command: sh -c "npm i && npm run dev"
+    command: "tail -f /dev/null"
